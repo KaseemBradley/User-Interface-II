@@ -1,1 +1,354 @@
 /* Add CSS styling here */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  /* border: 0; */
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  background: white;
+  line-height: 1;
+  color: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+/* End of CSS Reset */
+
+/* Start of General Styles*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* border: 1px solid gray; */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Alegreya", serif;
+  background-color: #e8e8e8;
+}
+/* End of General Styles */
+
+header {
+  margin: 0% 0%;
+  padding: 1% 0%;
+  width: 100%;
+  display: flex;
+  background-color: #495464;
+}
+
+nav {
+  margin: 0% 0%;
+}
+
+.navlinks {
+  display: flex;
+  margin: 0rem 0rem 0rem 5rem;
+}
+
+.navlinks button {
+  justify-content: center;
+  padding: 0.4rem 3rem;
+  border-radius: 0.9rem;
+  font-size: 1.7rem;
+  background-color: #bbbfca;
+  font-family: "Alegreya", serif;
+}
+
+h1 {
+  padding: 2rem 0rem;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #f4f4f2;
+}
+
+.topimg img {
+  width: 80%;
+  margin: 0.5rem;
+}
+
+.topimg {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  height: 30rem;
+  background-color: #e8e8e8;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.items h3 {
+  font-size: 2.5rem;
+}
+
+.items button {
+  font-size: 1.7rem;
+  padding: 0.8rem 6rem;
+  border-radius: 0.9rem;
+  margin-top: 1.5rem;
+  background-color: #bbbfca;
+  font-family: "Alegreya", serif;
+}
+
+.items p {
+  padding: 1.5rem 0rem;
+  font-size: 2.5rem;
+  width: 70%;
+}
+
+.body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #e8e8e8;
+  margin-top: 3rem;
+}
+
+.pic {
+  flex-flow: row wrap;
+}
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img,
+.image5 img,
+.image6 img,
+.image7 img,
+.image8 img {
+  margin: 0.5rem;
+  width: 28rem;
+  height: 16.5rem;
+}
+
+.body p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  align-items: center;
+  background-color: #495464;
+}
+
+.footer h4 {
+  padding: 2rem 13rem;
+  font-size: 2.5rem;
+  color: #f4f4f2;
+}
+
+.footer button {
+  padding: 0.8rem 5rem;
+  background-color: #bbbfca;
+  font-family: "Alegreya", serif;
+}
+
+.image1 img:hover,
+.image2 img:hover,
+.image3 img:hover,
+.image4 img:hover,
+.image5 img:hover,
+.image6 img:hover,
+.image7 img:hover,
+.image8 img:hover {
+  margin: 0.5rem;
+  width: 29rem;
+  height: 17rem;
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 500px) {
+  nav {
+    height: 45;
+    margin-left: 20%;
+  }
+
+  nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .kaseem {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .section {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topimg {
+    width: 100%;
+  }
+
+  .topimg img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+  }
+
+  .container .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .items p {
+    width: 30rem;
+    text-align: center;
+  }
+
+  .pic {
+    width: 40%;
+  }
+
+  .body {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer h4 {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+  }
+
+  .footer button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
