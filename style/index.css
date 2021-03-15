@@ -270,4 +270,23 @@ h1 {
 
 /* Media Queries */
 
-@
+@media (max-width: 800px) {
+}
+
+@media (max-width: 500px) {
+  nav {
+    height: 45;
+    margin-left: 20%;
+  }
+
+  nav div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .kaseem {
+    width: 100%;
+    margin-left: 10%;
+  }
+}
